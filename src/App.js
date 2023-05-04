@@ -1,23 +1,29 @@
-import logo from './logo.svg';
+import { Button } from './component/Button';
 import './App.css';
 
+
 function App() {
+
+  const dataContact = require('./data.json')
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="Profile">
+        <img src={require('./img/image-profile.jpg')} alt="#my-images" />
+        <div className="description">
+          <p>
+            My name is <span className='red-font'>Aji Hamdani Ahmad</span> and I'm a <span className='red-font'>Front end Web Developer</span>. 
+            I'm From Indonesia, living in Lamongan, East Java, and currently 
+            studying at State Polytechnic of Malang.
+          </p>
+        </div>
+      </div>
+      <div className="Button-group">
+        <h3>Contact Me : </h3>
+        <Button name="WhatsApp" userLink={dataContact.whatsapp}/>
+        <Button name="LinkedIn" userLink={dataContact.linkedIn} />
+        <Button name="Github" userLink={dataContact.github} />
+      </div>
     </div>
   );
 }
