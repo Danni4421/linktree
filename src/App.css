@@ -10,8 +10,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.5);
-  box-shadow: 0 0 20px 2px #000;
 }
 
 .Profile {
@@ -25,6 +23,16 @@
   width: 200px;
   border-radius: 50%;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 10px, rgb(51, 51, 51) 0px 0px 0px 6px;
+  transition: 0.4s;
+}
+
+.Profile img:hover {
+  width: 300px;
+  box-shadow: rgba(255, 0, 0, 0.16) 0px 1px 10px, rgb(97, 0, 0) 0px 0px 0px 6px;
+  animation-name: rotate;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  transition: 0.3s;
 }
 
 .Profile .description {
@@ -59,12 +67,31 @@
   transition: 0.2s;
   width: 90%;
   height: 8vh;
+  cursor: pointer;
 }
 
 .red-font {
   font-size: 1.3rem;
   font-weight: bolder;
   color: rgb(133, 0, 0);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.red-font:hover {
+  font-size: 1.5rem;
+  transition: 0.3s;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+    transition: 0.1s;
+  }
+  100% {
+    transform: rotate(360deg);
+    transition: 0.5s;
+  }
 }
 
 @media screen and (max-width: 576px) {
