@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 .App {
   width: 30%;
@@ -10,8 +10,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid #000;
-  background-color: rgba(255,255,255,0.5);
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 20px 2px #000;
 }
 
 .Profile {
@@ -28,7 +28,7 @@
 }
 
 .Profile .description {
-  font-family: 'Poppins';
+  font-family: "Poppins";
 }
 
 .Button-group {
@@ -44,17 +44,21 @@
   height: 7vh;
   border-radius: 10px;
   border: 1px solid #000;
-  transition: .2s;
-  font-family: 'Poppins';
+  transition: 0.2s;
+  font-family: "Poppins";
   font-size: 1.1rem;
   font-weight: bolder;
   background: transparent;
-  box-shadow: rgba(46, 124, 240, 0.4) 5px 5px, rgba(33, 2, 172, 0.3) 10px 10px, rgba(11, 0, 114, 0.2) 15px 15px, rgba(0, 3, 34, 0.1) 20px 20px, rgba(13, 1, 44, 0.05) 25px 25px; 
+  box-shadow: 6px 6px 1px 1px #000;
+  font-family: "Courier New", Courier, monospace;
 }
 
 .Button-group .btn:hover {
   background-color: rgb(204, 204, 204);
-  transition: .5s;
+  opacity: 0.8;
+  transition: 0.2s;
+  width: 90%;
+  height: 8vh;
 }
 
 .red-font {
@@ -66,21 +70,5 @@
 @media screen and (max-width: 576px) {
   .App {
     width: 80%;
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
   }
 }

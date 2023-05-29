@@ -1,14 +1,19 @@
 import { useState } from "react";
 
-export const Button = ({name, userLink}) => {
+export const Button = ({ name, userLink, color }) => {
+  const [link] = useState(userLink);
 
-    const [link] = useState(userLink)
+  const clickButton = () => {
+    window.location.href = `${link}`;
+  };
 
-    const clickButton = () => {
-        window.location.href = `${link}`;
-    }
-
-    return (
-        <button className="btn" onClick={clickButton}>{name}</button>
-    )
-}
+  return (
+    <button
+      className="btn"
+      style={{ backgroundColor: `${color}` }}
+      onClick={clickButton}
+    >
+      {name}
+    </button>
+  );
+};
