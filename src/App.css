@@ -2,8 +2,8 @@
 
 .App {
   width: 30%;
-  height: 100vh;
-  margin: 0 auto;
+  height: auto;
+  margin: 40px auto;
   padding: 0 30px;
   display: flex;
   gap: 40px;
