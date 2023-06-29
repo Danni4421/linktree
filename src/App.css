@@ -47,6 +47,14 @@
   gap: 30px;
 }
 
+.Button-group h3 {
+  font-size: 2rem;
+  background: #121fcf;
+  background: linear-gradient(to right, #121fcf 0%, #cf1512 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .Button-group .btn {
   width: 85%;
   height: 7vh;
@@ -81,6 +89,11 @@
 .red-font:hover {
   font-size: 1.5rem;
   transition: 0.3s;
+}
+
+cite {
+  font-family: "Courier New", Courier, monospace;
+  margin-bottom: 20px;
 }
 
 @keyframes rotate {

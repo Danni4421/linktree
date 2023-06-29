@@ -2,8 +2,6 @@ import { Button } from "./component/Button";
 import "./App.css";
 
 function App() {
-  const dataContact = require("./data.json");
-
   return (
     <div className="App">
       <div className="Profile">
@@ -11,26 +9,57 @@ function App() {
         <div className="description">
           <p>
             My name is <span className="red-font">Aji Hamdani Ahmad</span> and
-            I'm a <span className="red-font">Front end Web Developer</span>. I'm
-            From Indonesia, living in Lamongan, East Java, and currently
-            studying at State Polytechnic of Malang.
+            I'm passionate to be
+            <br />
+            <span className="red-font">Front end Web Developer</span>. I'm From
+            Indonesia, living in Lamongan, East Java, and currently studying at
+            State Polytechnic of Malang.
           </p>
         </div>
       </div>
       <div className="Button-group">
-        <h3>Contact Me : </h3>
+        <h3>Touch me in : </h3>
         <Button
           name="WhatsApp"
-          userLink={dataContact.whatsapp}
-          color="#0275d8"
+          userLink={process.env.REACT_APP_WHATSAPP}
+          color="#5cb85c"
         />
         <Button
           name="LinkedIn"
-          userLink={dataContact.linkedIn}
-          color="#5cb85c"
+          userLink={process.env.REACT_APP_LINKEDIN}
+          color="#0275d8"
         />
-        <Button name="Github" userLink={dataContact.github} color="#f0ad4e" />
+        <Button
+          name="Github"
+          userLink={process.env.REACT_APP_GITHUB}
+          color="#f0ad4e"
+        />
+        <Button
+          name="Email"
+          userLink={process.env.REACT_APP_EMAIL}
+          color="#bb4732"
+        />
+        <Button
+          name="Instagram"
+          userLink={process.env.REACT_APP_INSTAGRAM}
+          color="#a32372"
+          isLight={true}
+        />
+        <Button
+          name="Discord"
+          userLink={process.env.REACT_APP_DISCORD}
+          color="#312d31"
+          isLight={true}
+        />
+        <Button
+          name="Join my Discord Server"
+          userLink={process.env.REACT_APP_DISCORDSERVER}
+          color="#242124"
+          isLight={true}
+        />
       </div>
+
+      <cite>Danni4421 ~ 2023</cite>
     </div>
   );
 }
