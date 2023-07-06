@@ -1,11 +1,11 @@
-import { Button } from "./component/Button";
-import "./App.css";
+import { Button } from './component/Button';
+import './App.css';
 
 function App() {
   return (
     <div className="App">
       <div className="Profile">
-        <img src={require("./img/image-profile.jpg")} alt="#my-images" />
+        <img src={require('./img/image-profile.jpg')} alt="#my-images" />
         <div className="description">
           <p>
             My name is <span className="red-font">Aji Hamdani Ahmad</span> and
@@ -18,7 +18,9 @@ function App() {
         </div>
       </div>
       <div className="Button-group">
-        <h3>Touch me in : </h3>
+        <div>
+          <h3>Ayo Interaksi Bersamaku😁😁 : </h3>
+        </div>
         <Button
           name="WhatsApp"
           userLink={process.env.REACT_APP_WHATSAPP}

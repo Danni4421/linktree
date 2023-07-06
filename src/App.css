@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 .App {
   width: 30%;
@@ -36,7 +36,7 @@
 }
 
 .Profile .description {
-  font-family: "Poppins";
+  font-family: 'Poppins';
 }
 
 .Button-group {
@@ -49,10 +49,6 @@
 
 .Button-group h3 {
   font-size: 2rem;
-  background: #121fcf;
-  background: linear-gradient(to right, #121fcf 0%, #cf1512 100%);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .Button-group .btn {
@@ -61,12 +57,12 @@
   border-radius: 10px;
   border: 1px solid #000;
   transition: 0.2s;
-  font-family: "Poppins";
+  font-family: 'Poppins';
   font-size: 1.1rem;
   font-weight: bolder;
   background: transparent;
-  box-shadow: 6px 6px 1px 1px #000;
-  font-family: "Courier New", Courier, monospace;
+  box-shadow: 8px 8px 1px 1px #000;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .Button-group .btn:hover {
@@ -92,7 +88,7 @@
 }
 
 cite {
-  font-family: "Courier New", Courier, monospace;
+  font-family: 'Courier New', Courier, monospace;
   margin-bottom: 20px;
 }
 
